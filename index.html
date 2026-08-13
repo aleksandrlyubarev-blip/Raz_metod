@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Шореш — тренажёр глаголов иврита</title>
+  <meta name="description" content="Тренажёр глаголов иврита по технологии формул: биньяны, колонка, диктант, связки предлогов." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button class="brand" data-nav="home" type="button">
+        <span class="brand-he" dir="rtl">שורש</span>
+        <span class="brand-ru">Шореш</span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <button data-nav="formula" type="button">Формула</button>
+        <button data-nav="columns" type="button">Колонка</button>
+        <button data-nav="drill" type="button">Диктант</button>
+        <button data-nav="sentences" type="button">Фразы</button>
+        <button data-nav="tables" type="button">Таблицы</button>
+        <button data-nav="path" type="button">Путь</button>
+      </nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Меню">☰</button>
+    </header>
+
+    <main id="view" class="view"></main>
+
+    <nav class="bottom-nav" id="bottom-nav">
+      <button data-nav="home" type="button"><span>⌂</span>Дом</button>
+      <button data-nav="formula" type="button"><span>□</span>Формула</button>
+      <button data-nav="columns" type="button"><span>⋮</span>Колонка</button>
+      <button data-nav="drill" type="button"><span>✓</span>Диктант</button>
+      <button data-nav="sentences" type="button"><span>⋯</span>Фразы</button>
+      <button data-nav="path" type="button"><span>→</span>Путь</button>
+    </nav>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
